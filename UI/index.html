@@ -35,6 +35,39 @@
         </ul>
     </header>
     <!-- End of Header -->
+
+    <!-- Search Bus section -->
+    <div id='search'>
+        <div class="row">
+            <div class="search-form">
+                <h2>Search Bus Now</h2>
+                <p>Enter details below to select your route</p>
+                <!-- Form -->
+                <form action="#" method="#">
+                    <label>From: </label>
+                    <input type="text" name="from" pattern="^[a-zA-Z]+$" required>
+                    <label>To: </label>
+                    <input type="text" name="to" pattern="^[a-zA-Z]+$" required>
+                    <label>Travel Date: </label>
+                    <input type="date" name="date" id="today" required>
+                    <label>Currency: </label>
+                    <select name="currency">
+                        <option value="rwanda">RwF</option>
+                        <option value="ug">UGX</option>
+                        <option value="tz">TZS</option>
+                        <option value="kenya">KES</option>
+                    </select>
+
+                    <input type="submit" value="Search" id="search-bus">
+                </form>
+                <!-- End of Form -->
+            </div>
+            <div class="bus-img">
+                <img src="./img/1.png" alt="Scania Bus">
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
