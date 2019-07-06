@@ -43,6 +43,10 @@ a {
     text-transform: uppercase;
 }
 
+.logo a:hover {
+    color: #ffffff;
+}
+
 .main-nav a {
     font-size: 0.95em;
     color: #ffffff;
@@ -105,6 +109,10 @@ form {
     font-family: 'Sawarabi Mincho', sans-serif;
 }
 
+.side {
+    margin: 1% 9%;
+}
+
 input[type=text],
 input[type=date],
 select {
@@ -139,6 +147,35 @@ input[type=submit]:hover {
     background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
 
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.welcome {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.welcome p {
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.side h2,
+.welcome h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+p img {
+    display: block;
+    visibility: visible;
+    max-width: 100%;
+    height: 450px;
+}
+
 @media (min-width: 769px) {
     .main-header,
     .main-nav,
@@ -149,10 +186,18 @@ input[type=submit]:hover {
         flex-direction: column;
         align-items: center;
     }
+    .col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
     @media (min-width: 1025px) {
         .main-header {
             flex-direction: row;
             justify-content: space-between;
+        }
+        .welcome {
+            flex: 2;
         }
     }
 }
