@@ -176,6 +176,32 @@ p img {
     height: 450px;
 }
 
+.main-footer {
+    background: #333333;
+    padding: 2em 0;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-footer h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.contact-left {
+    margin-left: 7%;
+}
+
+.contact-right {
+    margin-right: 5%;
+}
+
 @media (min-width: 769px) {
     .main-header,
     .main-nav,
