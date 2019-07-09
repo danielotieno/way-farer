@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient( to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 a {
+    color: #333333;
+}
+
+
+/* ---- Navigation ---- */
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.55em;
+    margin: 0;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.logo a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.logo a:hover {
+    color: #ffffff;
+}
+
+.main-nav a {
+    font-size: 0.95em;
+    color: #ffffff;
+}
+
+.main-nav a:hover {
+    color: #093a58;
+}
+
+.main-header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    font-family: "Fjalla One", sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 100px;
+}
+
+.main {
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/*---------------------------
+ 	 Signup and Login Styles
+-----------------------------*/
+
+.container {
+    background: rgba(58, 63, 68, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+
+.head {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 8px;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.signup-item {
+    color: #ffff;
+    padding: 10px 25px 0;
+    margin: 15px 20px 0;
+    border-radius: 3px;
+}
+
+input {
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin-top: 10px;
+    outline: 0;
+    padding: 0;
+}
+
+.form input[type="password"],
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="submit"] {
+    width: 100%;
+}
+
+.form-signup input[type="text"],
+.form-signup input[type="password"],
+.form-signup input[type="email"],
+.form-signup input[type="submit"] {
+    border-radius: 0.25rem;
+    padding: 1rem;
+    color: #3a3f44;
+}
+
+.form-signup input[type="text"],
+.form-signup input[type="email"],
+.form-signup input[type="password"] {
+    background-color: #ffffff;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.form-signup input[type="submit"] {
+    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+    color: #ffffff;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.form-signup input[type="submit"]:focus,
+.form-signup input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+p a {
+    color: #f9d423;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.form-field {
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+
+@media (min-width: 769px) {
+    .main-header,
+    .main-nav,
+    .row {
+        display: flex;
+    }
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        min-height: 600px;
+    }
+    section {
+        padding: 80px 30px;
+    }
+    @media (min-width: 1025px) {
+        .main-header {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+        padding: 100px 50px;
+    }
+}
