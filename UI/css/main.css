@@ -62,7 +62,7 @@ a {
     border: 1px solid #ffffff;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
     border-radius: 5px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Fjalla One", sans-serif;
 }
 
 .row {
@@ -100,21 +100,21 @@ a {
 .title {
     text-transform: uppercase;
     font-weight: 400;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Fjalla One", sans-serif;
 }
 
 form {
     /* width: 70%; */
     margin: 4% 15%;
-    font-family: 'Sawarabi Mincho', sans-serif;
+    font-family: "Sawarabi Mincho", sans-serif;
 }
 
 .side {
     margin: 1% 9%;
 }
 
-input[type=text],
-input[type=date],
+input[type="text"],
+input[type="date"],
 select {
     margin-bottom: 20px;
     margin-top: 8px;
@@ -124,13 +124,13 @@ select {
     border: 1px solid #ccc;
 }
 
-input[type=text],
-input[type=date],
+input[type="text"],
+input[type="date"],
 select:focus {
     border-color: #666;
 }
 
-input[type=submit] {
+input[type="submit"] {
     margin-bottom: 20px;
     width: 50%;
     padding: 15px;
@@ -140,10 +140,10 @@ input[type=submit] {
     border-radius: 3px;
     color: #ffffff;
     text-transform: uppercase;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Fjalla One", sans-serif;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
     background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
 
@@ -159,14 +159,14 @@ input[type=submit]:hover {
 
 .welcome p {
     font-size: 20px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Sawarabi Mincho", sans-serif;
 }
 
 .side h2,
 .welcome h2 {
     color: #ffffff;
     text-transform: uppercase;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Fjalla One", sans-serif;
 }
 
 p img {
@@ -191,7 +191,7 @@ p img {
 .main-footer h3 {
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: "Fjalla One", sans-serif;
 }
 
 .contact-left {
