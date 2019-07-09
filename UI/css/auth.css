@@ -157,6 +157,11 @@ input {
     background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
 }
 
+p a {
+    color: #f9d423;
+    font-family: "Fjalla One", sans-serif;
+}
+
 .form-field {
     display: flex;
     margin-bottom: 0.8rem;
