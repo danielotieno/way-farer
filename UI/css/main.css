@@ -225,6 +225,18 @@ p img {
     font-family: "Fjalla One", sans-serif;
 }
 
+.edit {
+    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.full {
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+    color: #ffffff;
+    cursor: pointer;
+}
+
 section {
     display: flex;
     flex-direction: column;
