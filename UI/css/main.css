@@ -226,15 +226,30 @@ p img {
 }
 
 .edit {
-    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
     color: #ffffff;
     cursor: pointer;
 }
 
 .full {
-    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
     color: #ffffff;
     cursor: pointer;
+}
+
+.main h1 {
+    font: bold 60px "Sawarabi Mincho", sans-serif;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.main h3 {
+    font: normal 28px "Sawarabi Mincho", sans-serif;
+    margin-bottom: 40px;
+}
+
+.circular--square {
+    border-radius: 50%;
 }
 
 section {
