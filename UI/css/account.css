@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient( to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1 a {
+    color: #333333;
+}
+
+
+/* ---- Navigation ---- */
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.55em;
+    margin: 0;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.logo a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.logo a:hover {
+    color: #ffffff;
+}
+
+.main-nav a {
+    font-size: 0.95em;
+    color: #ffffff;
+}
+
+.main-nav a:hover {
+    color: #093a58;
+}
+
+.main-header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    padding-left: 10%;
+}
+
+.row {
+    flex: 1;
+}
+
+.account {
+    font-family: "Fjalla One", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-image: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+}
+
+@media (min-width: 769px) {
+    .main-header,
+    .main-nav,
+    .row {
+        display: flex;
+    }
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    @media (min-width: 1025px) {
+        .main-header {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .welcome {
+            flex: 2;
+        }
+    }
+}
