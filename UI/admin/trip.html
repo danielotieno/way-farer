@@ -13,7 +13,7 @@
 <body>
     <div class="admin">
         <header class="admin-header">
-            <a href="#" class="admin-logo">
+            <a href="./dashboard.html" class="admin-logo">
                 <h2>Admin Dashboard</h2>
             </a>
             <div class="search">
@@ -22,14 +22,11 @@
                 <input type="submit" value="Search" class="searchButton" />
             </div>
             <div class="admin-bar">
-                <a href="#" class="logout">Log Out</a>
+                <a href="../index.html" class="logout">Log Out</a>
             </div>
         </header>
         <nav class="sidebar">
             <ul class="menu">
-                <li class="menu-item">
-                    <a href="#" class="menu-link">Users</a>
-                </li>
                 <li class="menu-item">
                     <a href="#" class="menu-link">Trips</a>
                 </li>
@@ -65,8 +62,8 @@
                         <td scope="row" data-label="Bus">RAD 276 K</td>
                         <td data-label="Origin">KGL</td>
                         <td data-label="Dest">KPL</td>
-                        <td data-label="Time">2</td>
-                        <td data-label="Time">M</td>
+                        <td data-label="Time">10:00 AM</td>
+                        <td data-label="Time">10:30 AM</td>
                         <td data-label="Price">RWF 7,000</td>
                         <td data-label="Action" class="edit-buttons">
                             <button class="edit">Edit</button
@@ -77,8 +74,8 @@
                         <td scope="row" data-label="Bus">RAD 276 K</td>
                         <td data-label="Origin">KGL</td>
                         <td data-label="Dest">KPL</td>
-                        <td data-label="Time">2</td>
-                        <td data-label="Time">M</td>
+                        <td data-label="Time">10:00 AM</td>
+                        <td data-label="Time">10:30 AM</td>
                         <td data-label="Price">RWF 7,000</td>
                         <td data-label="Action" class="edit-buttons">
                             <button class="edit">Edit</button
@@ -89,8 +86,8 @@
                         <td scope="row" data-label="Bus">RAD 276 K</td>
                         <td data-label="Origin">KGL</td>
                         <td data-label="Dest">KPL</td>
-                        <td data-label="Time">2</td>
-                        <td data-label="Time">M</td>
+                        <td data-label="Time">10:00 AM</td>
+                        <td data-label="Time">10:30 AM</td>
                         <td data-label="Price">RWF 7,000</td>
                         <td data-label="Action" class="edit-buttons">
                             <button class="edit">Edit</button
@@ -101,8 +98,8 @@
                         <td scope="row" data-label="Bus">RAD 276 K</td>
                         <td data-label="Origin">KGL</td>
                         <td data-label="Dest">KPL</td>
-                        <td data-label="Time">2</td>
-                        <td data-label="Time">M</td>
+                        <td data-label="Time">10:00 AM</td>
+                        <td data-label="Time">10:30 AM</td>
                         <td data-label="Price">RWF 7,000</td>
                         <td data-label="Action" class="edit-buttons">
                             <button class="edit">Edit</button
@@ -113,8 +110,8 @@
                         <td scope="row" data-label="Bus">RAD 276 K</td>
                         <td data-label="Origin">KGL</td>
                         <td data-label="Dest">KPL</td>
-                        <td data-label="Time">2</td>
-                        <td data-label="Time">M</td>
+                        <td data-label="Time">10:00 AM</td>
+                        <td data-label="Time">10:30 AM</td>
                         <td data-label="Price">RWF 7,000</td>
                         <td data-label="Action" class="edit-buttons">
                             <button class="edit">Edit</button
@@ -135,16 +132,19 @@
                             <input type="text" id="cname" name="category" placeholder="Bus number..." required />
 
                             <label for="pname">Origin</label>
-                            <input type="text" id="sku" name="sku" placeholder="Origin..." required />
+                            <input type="text" id="origin" name="sku" placeholder="Origin..." required />
 
                             <label for="dest">Destination</label>
-                            <input type="text" id="price" name="dest" placeholder="Destination..." required />
+                            <input type="text" id="dest" name="dest" placeholder="Destination..." required />
 
                             <label for="reporting">Reporting Time</label>
-                            <input type="time" id="qty" name="report" placeholder="Reporting..." required />
+                            <input type="time" id="time" name="report" placeholder="Reporting..." required />
 
                             <label for="departure">Departure Time</label>
-                            <input type="time" id="qty" name="qty" placeholder="Departure..." required />
+                            <input type="time" id="ctime" name="qty" placeholder="Departure..." required />
+
+                            <label for="price">Price</label>
+                            <input type="number" id="price" name="qty" placeholder="Departure..." required />
 
                             <input type="submit" name="action" value="Create Trip" class="modelinput" />
                             <input type="submit" name="action" value="Close" style="background:#000000;" class="modelinput" />
@@ -154,6 +154,7 @@
             </div>
         </main>
     </div>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
