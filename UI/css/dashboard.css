@@ -1,0 +1,173 @@
+/*-------------
+General Styles
+-------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sawarabi Mincho", sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/*------------------
+Top Navigation Styles
+--------------------*/
+
+.admin {
+    --spacing: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: 250px;
+    grid-template-areas: "header header" "nav main";
+}
+
+.admin-header {
+    display: flex;
+    flex-basis: 100%;
+    grid-area: header;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+}
+
+a {
+    color: #dc5a60;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.admin-logo {
+    display: flex;
+    flex: 0 0 250px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    color: #ffffff;
+    background-color: #84d6b5;
+    font-size: 1rem;
+}
+
+.admin-bar {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 var(--spacing);
+}
+
+.search {
+    display: flex;
+    flex: 1 1 300px;
+    position: relative;
+    border: 1px solid #84d6b5;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-left: 300px;
+    margin-top: 15px;
+    height: 5vh;
+}
+
+.searchIcon {
+    margin-top: 5px;
+    padding: 0.5rem;
+}
+
+.searchBox {
+    border: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1;
+}
+
+.searchButton {
+    background: #84d6b5;
+    border: 0;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 0;
+}
+
+
+/*------------------
+Sidebar Nac Styles
+--------------------*/
+
+.sidebar {
+    flex: 0 0 250px;
+    grid-area: nav;
+    background-color: #313541;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.menu-link {
+    display: block;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color: #ffffff;
+    background-color: #1f222d;
+}
+
+.menu-link:focus {
+    color: #ffffff;
+    background-color: #1f222d;
+}
+
+
+/*------------------
+Dashboard Area
+--------------------*/
+
+.dash-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.dash-container p {
+    margin-top: 30%;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.tite h1 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.users,
+.trips,
+.bookings {
+    width: 20%;
+    height: 200px;
+    box-sizing: border-box;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
