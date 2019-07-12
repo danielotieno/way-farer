@@ -1,0 +1,416 @@
+/*-------------
+General Styles
+-------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sawarabi Mincho", sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/*------------------
+Top Navigation Styles
+--------------------*/
+
+.admin {
+    --spacing: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: 250px;
+    grid-template-areas: "header header" "nav main";
+}
+
+.admin-header {
+    display: flex;
+    flex-basis: 100%;
+    grid-area: header;
+    height: 70px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+}
+
+a {
+    color: #dc5a60;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.admin-logo {
+    display: flex;
+    flex: 0 0 250px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    color: #ffffff;
+    background-image: linear-gradient( to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    font-size: 1rem;
+}
+
+.admin-bar {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 var(--spacing);
+}
+
+.search {
+    display: flex;
+    flex: 1 1 300px;
+    position: relative;
+    border: 1px solid #84d6b5;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-left: 300px;
+    margin-top: 15px;
+    height: 5vh;
+}
+
+.searchIcon {
+    margin-top: 5px;
+    padding: 0.5rem;
+}
+
+.searchBox {
+    border: 0;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+    flex: 1;
+}
+
+.searchButton {
+    background-image: linear-gradient( to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    border: 0;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 0;
+}
+
+
+/*------------------
+Sidebar Nac Styles
+--------------------*/
+
+.sidebar {
+    flex: 0 0 250px;
+    grid-area: nav;
+    background-color: #313541;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.menu-link {
+    display: block;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color: #ffffff;
+    background-color: #1f222d;
+}
+
+.menu-link:focus {
+    color: #ffffff;
+    background-color: #1f222d;
+}
+
+
+/*------------------
+Dashboard Area
+--------------------*/
+
+.dash-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.dash-container p {
+    margin-top: 30%;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.tite h1 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.users,
+.trips,
+.bookings {
+    width: 20%;
+    height: 200px;
+    box-sizing: border-box;
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+
+.edit {
+    background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.full {
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/*------------------
+Popup Button
+--------------------*/
+
+.myButton {
+    -moz-box-shadow: inset 0px 1px 0px 0px #a4e271;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #a4e271;
+    box-shadow: inset 0px 1px 0px 0px #a4e271;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #89c403), color-stop(1, #77a809));
+    background: -moz-linear-gradient(top, #89c403 5%, #77a809 100%);
+    background: -webkit-linear-gradient(top, #89c403 5%, #77a809 100%);
+    background: -o-linear-gradient(top, #89c403 5%, #77a809 100%);
+    background: -ms-linear-gradient(top, #89c403 5%, #77a809 100%);
+    background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#89c403', endColorstr='#77a809', GradientType=0);
+    background-color: #89c403;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #74b807;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 57px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528009;
+    margin-left: 10px;
+}
+
+.myButton:hover {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77a809), color-stop(1, #89c403));
+    background: -moz-linear-gradient(top, #77a809 5%, #89c403 100%);
+    background: -webkit-linear-gradient(top, #77a809 5%, #89c403 100%);
+    background: -o-linear-gradient(top, #77a809 5%, #89c403 100%);
+    background: -ms-linear-gradient(top, #77a809 5%, #89c403 100%);
+    background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#77a809', endColorstr='#89c403', GradientType=0);
+    background-color: #77a809;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+}
+
+.close-button:hover {
+    background-color: darkgray;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+#origin,
+#cname,
+#time,
+#ctime,
+#dest {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.modelinput {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.modelinput:hover {
+    background-color: #45a049;
+}
+
+.div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+/*------------------
+Table styles
+--------------------*/
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: 0.5em 0 0.75em;
+}
+
+table tr {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 0.35em;
+}
+
+table th,
+table td {
+    padding: 0.625em;
+    text-align: center;
+}
+
+table th {
+    font-size: 0.85em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+table button {
+    border-radius: 3px;
+    border: none;
+    margin: 0 0.25em;
+    transition: all 0.3s;
+    font-size: 15px;
+    padding: 5px;
+}
+
+table button:hover {
+    box-shadow: 0 0 4px rgba(3, 3, 3, 0.8);
+    opacity: 0.9;
+}
+
+button.edit {
+    background: #84d6b5;
+}
+
+button.per {
+    background: #ffa31a;
+}
+
+button.delete {
+    background: #ff3300;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        border: 0;
+    }
+    table caption {
+        font-size: 1.3em;
+    }
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.625em;
+    }
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
