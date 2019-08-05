@@ -110,7 +110,7 @@ form {
 }
 
 .side {
-    margin: 1% 9%;
+    margin-left: 20px;
 }
 
 input[type="text"],
@@ -154,7 +154,7 @@ input[type="submit"]:hover {
 
 .welcome {
     margin-left: 25px;
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 .welcome p {
