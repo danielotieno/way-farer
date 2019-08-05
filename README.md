@@ -1,4 +1,5 @@
 # way-farer
+
 WayFarer is a public bus transportation booking service.
 
 Site is avaiable at [WayFarer](https://danielotieno.github.io/way-farer/UI/)
@@ -29,4 +30,5 @@ Site is avaiable at [WayFarer](https://danielotieno.github.io/way-farer/UI/)
 To get into dashboard click the link [Dashboard](https://danielotieno.github.io/way-farer/UI/admin/dashboard)
 
 ### To view User Profile
+
 To view User profile with vist [User](https://danielotieno.github.io/way-farer/UI/user/profile)
