@@ -1,4 +1,6 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -104,13 +106,12 @@ a {
 }
 
 form {
-    /* width: 70%; */
     margin: 4% 15%;
     font-family: "Sawarabi Mincho", sans-serif;
 }
 
 .side {
-    margin: 1% 9%;
+    margin-left: 20px;
 }
 
 input[type="text"],
@@ -154,7 +155,7 @@ input[type="submit"]:hover {
 
 .welcome {
     margin-left: 25px;
-    margin-top: 10px;
+    margin-top: 4px;
 }
 
 .welcome p {
@@ -291,7 +292,7 @@ table th {
     text-transform: uppercase;
 }
 
-@media (min-width: 769px) {
+@media only screen and (min-width: 769px) {
     .main-header,
     .main-nav,
     .row {
@@ -306,7 +307,7 @@ table th {
         display: flex;
         flex-direction: column;
     }
-    @media (min-width: 1025px) {
+    @media only screen and (min-width: 1025px) {
         .main-header {
             flex-direction: row;
             justify-content: space-between;
@@ -317,7 +318,38 @@ table th {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 773px) {
+    .search-form {
+        width: 100%;
+        padding: 20px;
+    }
+    input[type="text"],
+    input[type="date"],
+    select {
+        margin-bottom: 20px;
+        margin-top: 8px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+        margin-bottom: 15px;
+        width: 50%;
+        padding: 10px;
+        font-size: 10px;
+    }
+    .bus-img,
+    .side {
+        display: none;
+    }
+    .welcome {
+        width: 100%;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
     table {
         border: 0;
     }

@@ -1,0 +1,1 @@
+const deleteAlert = () => alert("Do you want to delete for sure?");
