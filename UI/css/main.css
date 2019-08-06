@@ -347,6 +347,9 @@ table th {
         width: 100%;
         display: block;
     }
+    section {
+        padding: 0px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
